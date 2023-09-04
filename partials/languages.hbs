@@ -1,10 +1,8 @@
 {{#if resume.languages.length}}
-<div class='sectionLine'></div>
-<div id='languages' class="sectionBlock">
-	<div class='sectionName'>
-		<span>LANGUAGES</span>
-	</div>
-	<div class='sectionContent'>
+<div id='languages' class="resume__section-block">
+	<div class='resume__section-content'>
+		<span class="resume__bold resume__uppercase">LANGUAGES</span>
+        <hr/>
 		{{#each resume.languages}}
 		<span class='language'>{{language}}</span>
 		{{#if fluency}}

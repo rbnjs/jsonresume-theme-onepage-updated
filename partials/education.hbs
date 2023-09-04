@@ -1,22 +1,20 @@
 {{#if resume.education.length}}
-<div class='sectionLine'></div>
-<div id='education' class="sectionBlock">
-	<div class='sectionName'>
-		<span>EDUCATION</span>
-	</div>
-	<div class='sectionContent'>
+<div id='education' class="resume__section-block">
+	<div class="resume__section-content">
+		<span class="resume__uppercase">Education</span>
+        <hr/>
 		{{#each resume.education}}
-		<div class='educationBlock'>
-			<span class='title'>
+		<div >
+			<span class='resume__bold'>
 				{{#if institution}}{{institution}}{{/if}}
 			</span>
 			{{#if startDate}}
-			<span class='date'>
+			<span class='resume__date'>
 				{{#if startDate}}{{formatDate startDate}}{{/if}} - {{#if endDate}}{{formatDate endDate}}{{else}}Present{{/if}}
 			</span>
 			{{/if}}
 			<div class=''>
-				{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if gpa}}, GPA: {{gpa}}{{/if}}
+				{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if gpa}}, Score: {{gpa}}{{/if}}
 			</div>
 			{{#if courses.length}}
 			<div id='coursesBlock'>
