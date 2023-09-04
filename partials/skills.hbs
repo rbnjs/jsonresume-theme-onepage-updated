@@ -1,13 +1,11 @@
 {{#if resume.skills.length}}
-<div class='sectionLine'></div>
-<div id='skills' class="sectionBlock">
-	<div class='sectionName'>
-		<span>SKILLS</span>
-	</div>
-	<div class='sectionContent'>
+<div id='skills' class="resume__section-block">
+	<div class='resume__section-content'>
+		<span class="resume__uppercase">SKILLS</span>
+        <hr/>
 		{{#each resume.skills}}
 		<div class='skillBlock'>
-			<span class='title'>{{#if name}}{{name}}{{/if}}{{#if level}} <em>({{level}})</em>{{/if}}:</span>
+			<span class='resume__bold'>{{#if name}}{{name}}{{/if}}{{#if level}} <em>({{level}})</em>{{/if}}:</span>
 			{{#if keywords.length}}
 			{{#each keywords}}
 			<span>{{.}}</span>{{#unless @last}}, {{/unless}}

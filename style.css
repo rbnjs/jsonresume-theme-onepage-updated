@@ -24,15 +24,37 @@ li {
 
 a {
     text-decoration: none;
+    color: #0B060E;
 }
 
 #resume {
     margin: 0 auto;
-    max-width: 600px;
-    padding: 80px 100px;
+    max-width: 40rem;
+    padding: 5rem 6rem;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 4px #aaa;
     -webkit-box-shadow: 2px 2px 4px #aaa;
+}
+
+.name__profile-image {
+    max-width: 6rem;
+    float: left;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+}
+
+.resume__large-font {
+    font-size: 1.6rem;
+}
+
+.resume__uppercase {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.resume__margin-bottom {
+    margin-bottom: 0.5rem;
 }
 
 .coursesList {
@@ -49,19 +71,29 @@ a {
     font-size: 13px;
 }
 
+.resume__section-block {
+    display: flex;
+    with: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    page-break-inside: avoid;
+}
+
 .sectionBlock {
     display: flex;
     width: 100%;
+    
 }
 
-.sectionName {
-    width: 18%;
+.resume__section-content {
     vertical-align: top;
     display: inline-block;
+    text-align: justify;
+    width: 100%;
+    page-break-inside: avoid;
 }
 
 .sectionContent {
-    width: 80%;
     vertical-align: top;
     display: inline-block;
 }
@@ -72,11 +104,11 @@ a {
     list-style-type: circle;
 }
 
-.sectionContent .title {
+.resume__bold {
     font-weight: bold;
 }
 
-.sectionContent .date {
+.resume__date {
     float: right;
 }
 
@@ -100,13 +132,15 @@ a {
 
 .summary {
     margin-top: 6px;
+    text-align: justify;
 }
 
 .skillBlock {
     margin-bottom: 4px;
 }
 
-.jobBlock {
+.resume__jobblock {
+    margin-top: 1rem;
     page-break-inside: avoid;
 }
 

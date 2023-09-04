@@ -1,29 +1,27 @@
 {{#if resume.work.length}}
-<div class='sectionLine'></div>
 <div id='workBlock' class="sectionBlock">
-	<div class='sectionName'>
-		<span>EXPERIENCE</span>
-	</div>
-	<div class='sectionContent'>
+	<div >
+		<span class="resume__uppercase">Experience</span>
+        <hr/>
 		{{#each resume.work}}
-		<div class="jobBlock">
-			<div class='blockHeader'>
-				<span class='title'>{{#if name}}{{name}}{{/if}}</span>
+		<div class="resume__jobblock">
+			<div>
+                <a href='{{url}}' class='resume__bold'>{{#if name}}{{name}}{{/if}}</a>
 				{{#if position}} | <span class="position">{{position}}</span>{{/if}}
 				{{#if startDate}}
-				<span class='date'>
+				<span class='resume__date'>
 					{{#if startDate}}{{formatDate startDate}}{{/if}} - {{#if endDate}}{{formatDate
 					endDate}}{{else}}Present{{/if}}
 				</span>
 				{{/if}}
 			</div>
-			<div><a href='{{url}}'>{{url}}</a></div>
 			{{#if summary}}
 			<div class="summary">
 				<p>{{summary}}</p>
 			</div>
 			{{/if}}
 			{{#if highlights.length}}
+            <span class="resume__bold">Highlights:</span>
 			<ul class='highlights'>
 				{{#each highlights}}
 				<li>{{.}}</li>

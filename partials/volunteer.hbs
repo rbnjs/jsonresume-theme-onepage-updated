@@ -1,20 +1,17 @@
 {{#if resume.volunteer.length}}
-<div class='sectionLine'></div>
-<div id='volunteer' class="sectionBlock">
-	<div class='sectionName'>
-		<span>VOLUNTEERING</span>
-	</div>
-	<div class='sectionContent'>
+<div id='volunteer' class="resume__section-block">
+	<div class='resume__section-content'>
+		<span class="resume__uppercase">VOLUNTEERING</span>
+        <hr/>
 		{{#each resume.volunteer}}
 		<div class='blockHeader'>
-			<span class='title'>{{#if organization}}{{organization}}{{/if}}{{#if position}} - {{position}}{{/if}}</span>
+            <a href="{{url}}" class='resume__bold'>{{#if organization}}{{organization}}{{/if}}{{#if position}} - {{position}}{{/if}}</a>
 			{{#if startDate}}
-			<span class='date'>
+			<span class='resume__date'>
 				{{#if startDate}}{{startDate}}{{/if}} &mdash; {{#if endDate}}{{endDate}}{{else}}Present{{/if}}
 			</span>
 			{{/if}}
 			{{#if url}}
-			<div class='url'><a href='{{url}}'>{{url}}</a></div>
 			{{/if}}
 			{{#if summary}}
 			<div class="summary">
