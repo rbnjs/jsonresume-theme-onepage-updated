@@ -1,7 +1,7 @@
 {{#if resume.education.length}}
 <div id='education' class="resume__section-block">
 	<div class="resume__section-content">
-		<span class="resume__uppercase">Education</span>
+		<span class="resume__uppercase">{{i18n "education"}}</span>
         <hr/>
 		{{#each resume.education}}
 		<div >
@@ -14,7 +14,7 @@
 			</span>
 			{{/if}}
 			<div class=''>
-				{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if gpa}}, Score: {{gpa}}{{/if}}
+				{{#if studyType}}{{studyType}} {{/if}} - {{#if area}}{{area}}{{/if}}{{#if gpa}}, {{i18n "score"}}: {{gpa}}{{/if}}
 			</div>
 			{{#if courses.length}}
 			<div id='coursesBlock'>

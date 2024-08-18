@@ -1,7 +1,7 @@
 {{#if resume.work.length}}
 <div id='workBlock' class="sectionBlock">
 	<div >
-		<span class="resume__uppercase">Experience</span>
+		<span class="resume__uppercase">{{i18n "experience"}}</span>
         <hr/>
 		{{#each resume.work}}
 		<div class="resume__jobblock">
@@ -11,7 +11,7 @@
 				{{#if startDate}}
 				<span class='resume__date'>
 					{{#if startDate}}{{formatDate startDate}}{{/if}} - {{#if endDate}}{{formatDate
-					endDate}}{{else}}Present{{/if}}
+					endDate}}{{else}}{{i18n "present"}}{{/if}}
 				</span>
 				{{/if}}
 			</div>
@@ -21,7 +21,7 @@
 			</div>
 			{{/if}}
 			{{#if highlights.length}}
-            <span class="resume__bold">Highlights:</span>
+            <span class="resume__bold">{{i18n "highlights"}}:</span>
 			<ul class='highlights'>
 				{{#each highlights}}
 				<li>{{.}}</li>
